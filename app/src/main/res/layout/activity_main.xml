@@ -4,15 +4,212 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="44dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/dumbbell"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:text="이름"
+        android:textColor="@color/gray_700"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ibmplexsans_regular"
+        android:text="오늘"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="2023-10-24"
+        android:textColor="@color/gray_600"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_day" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_goalTime"
+        android:layout_width="370dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="@color/main_600"
+        android:elevation="7dp"
+        app:cardCornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date">
+
+        <TextView
+            android:id="@+id/tv_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="29dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="목표"
+            android:textColor="@color/gray_400"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="29dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="2시간 30"
+            android:textColor="@color/gray_400"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_timeCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="1시간 15분 30초"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_todayExercise"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:elevation="7dp"
+        app:cardCornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_goalTime">
+
+        <TextView
+            android:id="@+id/tv_todayExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="목표"
+            android:textColor="@color/gray_600"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_goalExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="목표"
+            android:textColor="@color/gray_600"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_exercise1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="34dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="천국의 계단"
+            android:textColor="@color/gray_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_exercise2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="34dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="벤치프레스"
+            android:textColor="@color/gray_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_exercise3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="34dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="데드 리프트"
+            android:textColor="@color/gray_800"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_exerciseTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="1시간"
+            android:textColor="@color/main_800"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_exerciseTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="5세트"
+            android:textColor="@color/main_800"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_exerciseTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="285dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="5세트"
+            android:textColor="@color/main_800"
+            android:textSize="12sp" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
