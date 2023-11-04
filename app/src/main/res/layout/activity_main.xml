@@ -7,6 +7,7 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="44dp"
@@ -58,22 +59,22 @@
         android:id="@+id/cv_exercise"
         android:layout_width="370dp"
         android:layout_height="200dp"
-        app:cardCornerRadius="0dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="7dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_date"
-        app:strokeWidth="0dp"
-        android:backgroundTint="@color/white">
+        app:strokeWidth="0dp">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cv_goalTime"
             android:layout_width="370dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="17dp"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
             android:backgroundTint="@color/main_600"
             android:elevation="7dp"
-            android:layout_gravity="top
-"
             app:cardCornerRadius="7dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -134,7 +135,7 @@
                 android:fontFamily="@font/ibmplexsans_regular"
                 android:text="오늘의 운동"
                 android:textColor="@color/gray_600"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/iv_exercise1"
@@ -145,7 +146,7 @@
                 android:fontFamily="@font/ibmplexsans_regular"
                 android:text="천국의 계단"
                 android:textColor="@color/gray_800"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_exercise2"
@@ -156,7 +157,7 @@
                 android:fontFamily="@font/ibmplexsans_regular"
                 android:text="벤치프렌스"
                 android:textColor="@color/gray_800"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -166,7 +167,7 @@
                 android:fontFamily="@font/ibmplexsans_regular"
                 android:text="데드 리프트"
                 android:textColor="@color/gray_800"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/tv_exerciseTime1"
@@ -208,17 +209,42 @@
         android:id="@+id/tv_diet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/ibmplexsans_regular"
         android:text="식단"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_exercise"
-        android:textSize="20sp"
         android:textColor="@color/gray_600"
-        />
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_exercise" />
+
+    <ImageView
+        android:id="@+id/iv_pen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/write"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_diet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_diet" />
 
 
+    <ScrollView
+        android:id="@+id/sv_diet"
+        android:layout_width="448dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_diet">
+
+
+
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
