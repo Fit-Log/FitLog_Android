@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_change"
+        android:enabled="true"
+        android:icon="@drawable/chart_line"
+        android:title="변화" />
+
+    <item
+        android:id="@+id/item_home"
+        android:enabled="true"
+        android:icon="@drawable/all_application"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/item_calendar"
+        android:enabled="true"
+        android:icon="@drawable/calendar"
+        android:title="기록" />
+</menu>
