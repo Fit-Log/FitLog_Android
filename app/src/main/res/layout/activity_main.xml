@@ -208,27 +208,35 @@
                 </com.google.android.material.card.MaterialCardView>
             </com.google.android.material.card.MaterialCardView>
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp">
+
                 <TextView
                     android:id="@+id/tv_diet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:paddingLeft="20dp"
                     android:fontFamily="@font/ibmplexsans_regular"
                     android:text="식단"
                     android:textColor="@color/gray_600"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <ImageView
                     android:id="@+id/iv_pen"
-                    android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/write" />
-            </LinearLayout>
+                    android:paddingRight="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/write"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <ScrollView
                 android:layout_width="448dp"
@@ -236,9 +244,16 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
                 android:fillViewport="true"
-                android:scrollbars="none">
+                android:scrollbars="none"></ScrollView>
 
-            </ScrollView>
+            <ImageView
+                android:id="@+id/iv_playlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/playlist"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
         </LinearLayout>
     </ScrollView>
 
