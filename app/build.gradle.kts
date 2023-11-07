@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "app.yunho.fitlog_android"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "app.yunho.fitlog_android"
