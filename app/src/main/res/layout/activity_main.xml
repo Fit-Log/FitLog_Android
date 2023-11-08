@@ -61,8 +61,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
 
-                android:text="2023-10-24"
                 android:fontFamily="@font/ibmplexsans_regular"
+                android:text="2023-10-24"
                 android:textColor="@color/gray_600"
                 android:textSize="16sp" />
 
@@ -85,7 +85,7 @@
                     app:strokeWidth="0dp">
 
                     <TextView
-                        android:id="@+id/tv_goal"
+                        android:id="@+id/tv_goalTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -97,7 +97,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/tv_goalTime"
+                        android:id="@+id/tv_Time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="42dp"
@@ -206,6 +206,7 @@
                         android:textColor="@color/main_800"
                         android:textSize="12sp" />
                 </com.google.android.material.card.MaterialCardView>
+
             </com.google.android.material.card.MaterialCardView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -217,12 +218,14 @@
                     android:id="@+id/tv_diet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
                     android:fontFamily="@font/ibmplexsans_regular"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
                     android:text="식단"
                     android:textColor="@color/gray_600"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -230,8 +233,8 @@
                     android:id="@+id/iv_pen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingRight="20dp"
                     android:layout_gravity="center"
+                    android:paddingEnd="20dp"
                     android:src="@drawable/write"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -242,28 +245,87 @@
                 android:layout_width="448dp"
                 android:layout_height="194dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="12dp"
                 android:fillViewport="true"
-                android:scrollbars="none"></ScrollView>
+                android:scrollbars="none">
+
+                <ImageView
+                    android:id="@+id/iv_dietM"
+                    android:layout_width="136dp"
+                    android:layout_height="194dp"
+                    android:src="@drawable/rectangle_diet"/>
+            </ScrollView>
 
             <ImageView
                 android:id="@+id/iv_playlist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/playlist"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:src="@drawable/playlist" />
 
+            <TextView
+                android:id="@+id/tv_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:text="목표"
+                android:textColor="@color/gray_600"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_todayGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/ibmplexsans_regular"
+                    android:text="매일 나만의 목표를 설정하고 지켜보세요!"
+                    android:textColor="@color/gray_600"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_goalPen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/write"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv_bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="8dp"
+        app:itemBackground="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
 
 
 
