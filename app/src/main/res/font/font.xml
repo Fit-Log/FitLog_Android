@@ -3,6 +3,6 @@
     <font android:font="@font/ibmplexsans_regular"
         android:fontStyle="normal" />
 
-    <font android:font="@font/notosans_regular"
-        android:fontStyle="normal"/>
+<font android:font="@font/notosans_regular"
+    android:fontStyle="normal"/>
 </font-family>
