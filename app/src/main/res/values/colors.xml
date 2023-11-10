@@ -8,5 +8,6 @@
     <color name="gray_700">#505050</color>
     <color name="gray_800">#343434</color>
     <color name="main_600">#0972ED</color>
+    <color name="main_700">#1B6BD2</color>
     <color name="main_800">#1254A8</color>
 </resources>
