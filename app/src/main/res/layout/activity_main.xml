@@ -150,7 +150,8 @@
                         android:fontFamily="@font/ibmplexsans_regular"
                         android:text="천국의 계단"
                         android:textColor="@color/gray_800"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tv_exercise2"
@@ -161,7 +162,8 @@
                         android:fontFamily="@font/ibmplexsans_regular"
                         android:text="벤치프렌스"
                         android:textColor="@color/gray_800"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -171,7 +173,8 @@
                         android:fontFamily="@font/ibmplexsans_regular"
                         android:text="데드 리프트"
                         android:textColor="@color/gray_800"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tv_exerciseTime1"
@@ -240,6 +243,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <ScrollView
                 android:layout_width="448dp"
                 android:layout_height="194dp"
@@ -257,39 +261,39 @@
                         android:id="@+id/tv_morning"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="아침"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
                         android:layout_marginTop="12dp"
                         android:fontFamily="@font/ibmplexsans_regular"
+                        android:text="아침"
+                        android:textColor="@color/gray_700"
                         android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@color/gray_700"/>
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/tv_menuMorning"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular"
                         android:text="메뉴1\n메뉴2\n메뉴3"
+                        android:textColor="@color/gray_700"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_morning"
-                        android:fontFamily="@font/notosans_regular"
-                        android:textColor="@color/gray_700"/>
+                        app:layout_constraintTop_toBottomOf="@+id/tv_morning" />
 
                     <TextView
                         android:id="@+id/tv_kcalMorning"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibmplexsans_regular"
                         android:text="230Kcal"
+                        android:textColor="@color/main_700"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_menuMorning"
-                        android:textSize="18sp"
-                        android:textColor="@color/main_700"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:textStyle="bold"/>
+                        app:layout_constraintTop_toBottomOf="@+id/tv_menuMorning" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </ScrollView>
 
@@ -346,7 +350,7 @@
         </LinearLayout>
     </ScrollView>
 
-<!--    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnv_bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -355,10 +359,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />-->
+        app:menu="@menu/bottom_navigation_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
