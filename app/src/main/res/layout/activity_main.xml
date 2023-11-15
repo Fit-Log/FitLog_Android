@@ -249,15 +249,15 @@
                 android:scrollbars="none">
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
                     <include
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
                         android:id="@+id/breakfast"
                         layout="@layout/meal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -267,8 +267,8 @@
                         android:id="@+id/lunch"
                         layout="@layout/meal"
                         android:layout_width="wrap_content"
-                        android:layout_marginStart="20dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/breakfast"
                         app:layout_constraintTop_toTopOf="parent" />
