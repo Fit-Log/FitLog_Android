@@ -65,151 +65,150 @@
                 android:textColor="@color/gray_600"
                 android:textSize="16sp" />
 
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cv_exercise"
-                android:layout_width="370dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="17dp"
-                android:backgroundTint="@color/white"
-                app:cardCornerRadius="7dp"
-                app:cardElevation="7dp"
-                app:strokeWidth="0dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cv_exercise"
+                            android:layout_width="370dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="17dp"
+                            android:backgroundTint="@color/white"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="7dp"
+                            app:strokeWidth="0dp">
 
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="370dp"
-                    android:layout_height="200dp"
-                    android:backgroundTint="@color/main_600"
-                    app:cardCornerRadius="7dp"
-                    app:strokeWidth="0dp">
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="370dp"
+                                android:layout_height="200dp"
+                                android:backgroundTint="@color/main_600"
+                                app:cardCornerRadius="7dp"
+                                app:strokeWidth="0dp">
 
-                    <TextView
-                        android:id="@+id/tv_goalTime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="29dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="목표"
-                        android:textColor="@color/gray_400"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/tv_goalTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="29dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="목표"
+                                    android:textColor="@color/gray_400"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/tv_Time"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="42dp"
-                        android:layout_marginTop="29dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="2시간 30분"
-                        android:textColor="@color/gray_400"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/tv_Time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="42dp"
+                                    android:layout_marginTop="29dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="2시간 30분"
+                                    android:textColor="@color/gray_400"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/tv_timeCheck"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="55dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="1시간 15분 30초"
-                        android:textColor="@color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-                </com.google.android.material.card.MaterialCardView>
+                                <TextView
+                                    android:id="@+id/tv_timeCheck"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="55dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="1시간 15분 30초"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cv_todayExercise"
-                    android:layout_width="370dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="bottom"
-                    android:backgroundTint="@color/white"
-                    app:cardCornerRadius="0dp"
-                    app:strokeWidth="0dp">
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/cv_todayExercise"
+                                android:layout_width="370dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="bottom"
+                                android:backgroundTint="@color/white"
+                                app:cardCornerRadius="0dp"
+                                app:strokeWidth="0dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="오늘의 운동"
-                        android:textColor="@color/gray_600"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="오늘의 운동"
+                                    android:textColor="@color/gray_600"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/iv_exercise1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="34dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="천국의 계단"
-                        android:textColor="@color/gray_800"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/iv_exercise1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="34dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="천국의 계단"
+                                    android:textColor="@color/gray_800"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/tv_exercise2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="153dp"
-                        android:layout_marginTop="34dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="벤치프렌스"
-                        android:textColor="@color/gray_800"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/tv_exercise2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="153dp"
+                                    android:layout_marginTop="34dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="벤치프렌스"
+                                    android:textColor="@color/gray_800"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="285dp"
-                        android:layout_marginTop="34dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="데드 리프트"
-                        android:textColor="@color/gray_800"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="285dp"
+                                    android:layout_marginTop="34dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="데드 리프트"
+                                    android:textColor="@color/gray_800"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/tv_exerciseTime1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="55dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="1시간"
-                        android:textColor="@color/main_800"
-                        android:textSize="12sp" />
+                                <TextView
+                                    android:id="@+id/tv_exerciseTime1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="55dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="1시간"
+                                    android:textColor="@color/main_800"
+                                    android:textSize="12sp" />
 
-                    <TextView
-                        android:id="@+id/tv_exerciseTime2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="153dp"
-                        android:layout_marginTop="55dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="5세트"
-                        android:textColor="@color/main_800"
-                        android:textSize="12sp" />
+                                <TextView
+                                    android:id="@+id/tv_exerciseTime2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="153dp"
+                                    android:layout_marginTop="55dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="5세트"
+                                    android:textColor="@color/main_800"
+                                    android:textSize="12sp" />
 
-                    <TextView
-                        android:id="@+id/tv_exerciseTime3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="285dp"
-                        android:layout_marginTop="55dp"
-                        android:fontFamily="@font/ibmplexsans_regular"
-                        android:text="5세트"
-                        android:textColor="@color/main_800"
-                        android:textSize="12sp" />
-                </com.google.android.material.card.MaterialCardView>
-
-            </com.google.android.material.card.MaterialCardView>
+                                <TextView
+                                    android:id="@+id/tv_exerciseTime3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="285dp"
+                                    android:layout_marginTop="55dp"
+                                    android:fontFamily="@font/ibmplexsans_regular"
+                                    android:text="5세트"
+                                    android:textColor="@color/main_800"
+                                    android:textSize="12sp" />
+                            </com.google.android.material.card.MaterialCardView>
+                        </com.google.android.material.card.MaterialCardView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -246,6 +245,7 @@
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="194dp"
+                android:layout_gravity="center"
                 android:scrollbars="none">
 
                 <LinearLayout
@@ -323,6 +323,7 @@
                     android:text="매일 나만의 목표를 설정하고 지켜보세요!"
                     android:textColor="@color/gray_600"
                     android:textSize="10sp"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
