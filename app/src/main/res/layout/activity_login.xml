@@ -31,24 +31,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_loginLogo" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_login">
+        app:layout_constraintTop_toBottomOf="@+id/tv_login"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_radius"
+        android:textColor="@color/gray_800"
+        android:hint="아이디"
+        android:textColorHint="@color/gray_400"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tiet_id"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
-            android:hint="아이디"
-            android:textColorHint="@color/gray_400"
-            android:textColor="@color/gray_800"
-            android:background="@drawable/text_radius"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
