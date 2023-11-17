@@ -50,8 +50,13 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_id"
+        app:passwordToggleDrawable="@drawable/eye_close_line"
+        app:passwordToggleEnabled="true">
 
         <EditText
             android:id="@+id/et_password"
@@ -63,15 +68,38 @@
             android:background="@drawable/text_radius"
             android:fontFamily="@font/ibmplexsans_regular"
             android:hint="비밀번호"
+            android:inputType="textPassword"
             android:textColor="@color/gray_800"
             android:textColorHint="@color/gray_400"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/et_id" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/tv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ibmplexsans_regular"
+        android:text="아이디 또는 비밀번호를 다시 확인해주세요"
+        android:textColor="#f00"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/login_btn_unselected"
+        android:layout_marginBottom="40dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
