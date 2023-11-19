@@ -33,51 +33,48 @@
 
     <EditText
         android:id="@+id/et_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_radius"
         android:fontFamily="@font/ibmplexsans_regular"
         android:hint="아이디"
-        android:textStyle="bold"
         android:textColor="@color/gray_800"
         android:textColorHint="@color/gray_400"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_login" />
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_id"
         app:passwordToggleDrawable="@drawable/eye_close_line"
-        app:passwordToggleEnabled="true"
-        app:hintTextColor="@color/gray_400">
+        app:passwordToggleEnabled="true">
 
         <EditText
-            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="30dp"
             android:background="@drawable/text_radius"
             android:fontFamily="@font/ibmplexsans_regular"
             android:hint="비밀번호"
-            android:inputType="textPassword"
-            android:textColor="@color/gray_800"
+            android:textColorHint="@color/gray_400"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_id" />
+            android:textStyle="bold" />
+
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <TextView
         android:id="@+id/tv_check"
