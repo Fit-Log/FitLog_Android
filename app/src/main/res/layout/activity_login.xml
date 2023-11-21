@@ -33,8 +33,8 @@
 
     <EditText
         android:id="@+id/et_id"
-        android:layout_width="350dp"
-        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="30dp"
@@ -95,7 +95,7 @@
         android:id="@+id/button"
         android:layout_width="350dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/login_btn_unselected"
         android:outlineProvider="none"
         android:text="로그인"
@@ -112,11 +112,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="115dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/ibmplexsans_regular"
         android:text="아직 회원이 아니신가요? "
         android:textAlignment="center"
         android:textColor="@color/gray_600"
         android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -126,10 +128,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/ibmplexsans_regular"
         android:text="회원가입"
         android:textColor="@color/main_600"
         android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_member"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
