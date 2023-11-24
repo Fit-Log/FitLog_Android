@@ -30,11 +30,10 @@
         app:layout_constraintTop_toTopOf="@+id/iv_logo" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/sv_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toBottomOf="@+id/bnv_bottomNavigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo">
@@ -74,7 +73,8 @@
                 android:backgroundTint="@color/white"
                 app:cardCornerRadius="7dp"
                 app:cardElevation="7dp"
-                app:strokeWidth="0dp">
+                app:strokeWidth="0dp"
+                style="@style/ShapeAppearance.Button.CutCorners">
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="370dp"
