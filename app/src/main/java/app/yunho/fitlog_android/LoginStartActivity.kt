@@ -3,20 +3,20 @@ package app.yunho.fitlog_android
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import app.yunho.fitlog_android.databinding.ActivityLoginStartBinding
+import android.view.View
+import android.widget.Button
 
 class LoginStartActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityLoginStartBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginStartBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_login_start)
 
-        binding.btnLogin.setOnClickListener {
+        val btnLogin: Button = findViewById(R.id.btn_login)
+
+        btnLogin.setOnClickListener { View.OnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-        }
+        } }
+
     }
 }
