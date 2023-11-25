@@ -41,6 +41,7 @@
         android:background="@drawable/text_radius"
         android:fontFamily="@font/ibmplexsans_regular"
         android:hint="아이디"
+        android:inputType="text"
         android:textColor="@color/gray_800"
         android:textColorHint="@color/gray_400"
         android:textSize="16sp"
@@ -69,6 +70,7 @@
             android:background="@drawable/text_radius"
             android:fontFamily="@font/ibmplexsans_regular"
             android:hint="비밀번호"
+            android:inputType="textPassword"
             android:textColorHint="@color/gray_400"
             android:textSize="16sp"
             android:textStyle="bold" />
