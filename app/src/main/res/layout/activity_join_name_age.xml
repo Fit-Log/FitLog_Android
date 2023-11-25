@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".JoinIdActivity">
+    tools:context=".JoinNameAgeActivity">
 
     <ImageView
         android:id="@+id/iv_logo"
@@ -32,22 +32,21 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
     <TextView
-        android:id="@+id/tv_joinNumber"
+        android:id="@+id/tv_joinNumber3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/ibmplexsans_regular"
-        android:text="1/4"
+        android:text="3/4"
         android:textColor="@color/gray_700"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
-
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_joinName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -55,30 +54,34 @@
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_radius"
         android:fontFamily="@font/ibmplexsans_regular"
-        android:hint="아이디 (영문 8자 이하)"
+        android:hint="이름"
         android:inputType="text"
         android:textColor="@color/gray_800"
         android:textColorHint="@color/gray_400"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_join" />
 
-    <TextView
-        android:id="@+id/tv_idCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/et_joinAge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/text_radius"
         android:fontFamily="@font/ibmplexsans_regular"
-        android:gravity="center"
-        android:text="아이디를 다시 확인해주세요"
-        android:textColor="#f00"
-        android:textSize="10sp"
-        android:visibility="invisible"
+        android:hint="나이"
+        android:inputType="number"
+        android:textColor="@color/gray_800"
+        android:textColorHint="@color/gray_400"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/et_joinName" />
 
     <Button
         android:id="@+id/btn_next"
@@ -94,6 +97,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
