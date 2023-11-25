@@ -42,6 +42,8 @@ class MainActivity : AppCompatActivity() {
             bottomNavigationViewBackground.shapeAppearanceModel.toBuilder()
                 .setTopRightCorner(CornerFamily.ROUNDED, radius)
                 .setTopLeftCorner(CornerFamily.ROUNDED, radius)
+                .setBottomRightCorner(CornerFamily.ROUNDED, 0f)
+                .setBottomLeftCorner(CornerFamily.ROUNDED, 0f)
                 .build()
 
         val callback = object : OnBackPressedCallback(true) {
