@@ -45,7 +45,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
-
     <EditText
         android:id="@+id/et_joinId"
         android:layout_width="match_parent"
@@ -57,10 +56,10 @@
         android:fontFamily="@font/ibmplexsans_regular"
         android:hint="아이디 (영문 8자 이하)"
         android:inputType="text"
-        android:textStyle="bold"
         android:textColor="@color/gray_800"
         android:textColorHint="@color/gray_400"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
