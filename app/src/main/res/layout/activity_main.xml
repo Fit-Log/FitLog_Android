@@ -66,6 +66,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cv_exercise"
+                style="@style/ShapeAppearance.Button.CutCorners"
                 android:layout_width="370dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
@@ -73,8 +74,7 @@
                 android:backgroundTint="@color/white"
                 app:cardCornerRadius="7dp"
                 app:cardElevation="7dp"
-                app:strokeWidth="0dp"
-                style="@style/ShapeAppearance.Button.CutCorners">
+                app:strokeWidth="0dp">
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="370dp"
@@ -376,20 +376,20 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:elevation="20dp"
         app:layout_constraintRight_toRightOf="parent">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bnv_bottomNavigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_navigation_menu"
-            android:background="@color/white"/>
+            app:menu="@menu/bottom_navigation_menu" />
 
     </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
