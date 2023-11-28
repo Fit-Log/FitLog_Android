@@ -18,6 +18,12 @@
             android:name=".GoalTimeActivity"
             android:exported="false" />
         <activity
+            android:name=".LoginStartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
