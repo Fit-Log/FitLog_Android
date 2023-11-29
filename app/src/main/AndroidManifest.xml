@@ -15,6 +15,9 @@
         android:theme="@style/Theme.FitLog_Android"
         tools:targetApi="31">
         <activity
+            android:name=".AddDietActivity"
+            android:exported="false" />
+        <activity
             android:name=".JoinWeightHeightActivity"
             android:exported="false" />
         <activity
