@@ -73,4 +73,34 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_profileName" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profileModify"
+        android:backgroundTint="@color/main_400"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_profileModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 정보 수정"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage"
+        android:textColor="@color/gray_000"
+        android:background="@drawable/profile_modify_background"
+        android:textSize="10sp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="20dp"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
