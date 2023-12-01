@@ -122,7 +122,6 @@
                         android:textStyle="bold" />
 
                 </com.google.android.material.card.MaterialCardView>
-
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cv_todayExercise"
                     android:layout_width="370dp"
