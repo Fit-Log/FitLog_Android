@@ -50,6 +50,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/ibmplexsans_regular"
+                android:includeFontPadding="false"
                 android:text="오늘"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -59,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/ibmplexsans_regular"
                 android:text="2023-11-22"
                 android:textColor="@color/gray_600"
