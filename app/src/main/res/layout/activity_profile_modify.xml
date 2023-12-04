@@ -104,7 +104,56 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/et_modifyHeight"
             app:layout_constraintTop_toTopOf="@+id/et_modifyHeight" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_height">
 
+        <TextView
+            android:id="@+id/tv_modifyWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:text="몸무게"
+            android:textColor="@color/gray_800"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_modifyWeight"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/modify_input_background"
+            android:textColor="@color/gray_800"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_modifyWeight" />
+
+        <TextView
+            android:id="@+id/tv_modifyWg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:includeFontPadding="false"
+            android:text="Kg"
+            android:textColor="@color/gray_800"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_modifyWeight"
+            app:layout_constraintTop_toTopOf="@+id/et_modifyWeight" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
