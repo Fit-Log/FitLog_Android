@@ -19,8 +19,8 @@
             android:id="@+id/iv_logo"
             android:layout_width="44dp"
             android:layout_height="36dp"
-            android:layout_marginTop="15dp"
             android:src="@drawable/dumbbell"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
