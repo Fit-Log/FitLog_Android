@@ -74,7 +74,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_profileName" />
 
+
+    <TextView
+        android:id="@+id/tv_profileModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/profile_modify_background"
+        android:text="내 정보 수정"
+        android:textColor="@color/gray_000"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage" />
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginStart="20dp"
@@ -91,11 +106,56 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/tv_profileHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:includeFontPadding="true"
+                android:text="키"
+                android:textColor="@color/gray_000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/tv_profileWeight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_profileCm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:includeFontPadding="true"
+                android:text="205cm"
+                android:textColor="@color/gray_000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_profileHeight"
+                app:layout_constraintStart_toStartOf="@+id/tv_profileHeight"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profileHeight" />
+
+            <TextView
+                android:id="@+id/tv_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:text="|"
+                android:textColor="@color/gray_200"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_profileKg"
+                app:layout_constraintStart_toEndOf="@+id/tv_profileCm"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
                 android:id="@+id/tv_profileWeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:fontFamily="@font/ibmplexsans_regular"
+                android:includeFontPadding="true"
                 android:text="몸무게"
                 android:textColor="@color/gray_000"
                 android:textSize="12sp"
@@ -104,23 +164,93 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:id="@+id/tv_profileKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:includeFontPadding="true"
+                android:text="100Kg"
+                android:textColor="@color/gray_000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_profileWeight"
+                app:layout_constraintStart_toStartOf="@+id/tv_profileWeight"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profileWeight" />
+
+            <TextView
+                android:id="@+id/tv_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:text="|"
+                android:textColor="@color/gray_200"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_profileYears"
+                app:layout_constraintStart_toEndOf="@+id/tv_profileKg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_profileAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:includeFontPadding="true"
+                android:text="나이"
+                android:textColor="@color/gray_000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_profileWeight"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_profileYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibmplexsans_regular"
+                android:includeFontPadding="true"
+                android:text="58세"
+                android:textColor="@color/gray_000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_profileAge"
+                app:layout_constraintStart_toStartOf="@+id/tv_profileAge"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profileAge" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/tv_profileModify"
+        android:id="@+id/tv_profileLogOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/profile_modify_background"
-        android:text="내 정보 수정"
-        android:textColor="@color/gray_000"
+        android:fontFamily="@font/ibmplexsans_regular"
+        android:text="로그아웃"
+        android:textColor="@color/gray_800"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_myPage" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_marginTop="52dp"
+        android:layout_marginStart="164dp"
+        android:includeFontPadding="true"/>
+
+    <TextView
+        android:id="@+id/tv_profileWithdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ibmplexsans_regular"
+        android:text="회원 탈퇴"
+        android:textColor="@color/gray_800"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_profileLogOut"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_marginTop="52dp"
+        android:layout_marginStart="28dp">
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
