@@ -7,27 +7,36 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/iv_logo"
-        android:layout_width="44dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/dumbbell"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_mainTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="이름"
-        android:textColor="@color/gray_700"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/iv_logo" />
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="44dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/dumbbell"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="이름"
+            android:textColor="@color/gray_700"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:id="@+id/sv_main"
@@ -36,7 +45,7 @@
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo">
+        app:layout_constraintTop_toBottomOf="@+id/constraint_mainTopBar">
 
         <LinearLayout
             android:layout_width="match_parent"
