@@ -29,13 +29,13 @@
             android:id="@+id/tv_profileModify"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
             android:fontFamily="@font/ibmplexsans_regular"
             android:includeFontPadding="false"
             android:text="내 정보 수정하기"
             android:textColor="@color/gray_800"
             android:textSize="16sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -75,7 +75,9 @@
             android:text="키"
             android:textColor="@color/gray_800"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/et_modifyHeight"
@@ -87,6 +89,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_modifyHeight" />
+
+        <TextView
+            android:id="@+id/tv_modifyCm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:fontFamily="@font/ibmplexsans_regular"
+            android:includeFontPadding="false"
+            android:text="cm"
+            android:textColor="@color/gray_800"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_modifyHeight"
+            app:layout_constraintTop_toTopOf="@+id/et_modifyHeight" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
