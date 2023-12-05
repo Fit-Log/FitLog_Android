@@ -15,6 +15,12 @@
         android:theme="@style/Theme.FitLog_Android"
         tools:targetApi="31">
         <activity
+            android:name=".ProfileModifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".JoinWeightHeightActivity"
             android:exported="false" />
         <activity
@@ -22,6 +28,12 @@
             android:exported="false" />
         <activity
             android:name=".JoinIdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoalTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginStartActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
