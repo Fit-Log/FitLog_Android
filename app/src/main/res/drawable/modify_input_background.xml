@@ -12,10 +12,10 @@
         </shape>
     </item>
     <item
-        android:top="1dp"
-        android:right="1dp"
-        android:bottom="1dp"
-        android:left="1dp">
+        android:top="0.5dp"
+        android:right="0.5dp"
+        android:bottom="0.5dp"
+        android:left="0.5dp">
         <shape android:shape="rectangle">
             <solid android:color="@color/white"/>
             <corners
@@ -24,10 +24,10 @@
                 android:bottomRightRadius="8dp"
                 android:bottomLeftRadius="8dp"/>
             <padding
-                android:top="5dp"
+                android:top="15dp"
                 android:left="16dp"
-                android:right="136dp"
-                android:bottom="5dp"/>
+                android:right="156dp"
+                android:bottom="258dp"/>
         </shape>
     </item>
 </layer-list>
