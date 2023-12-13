@@ -22,7 +22,11 @@
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginBottom="50dp"
+<<<<<<< HEAD
         android:background="@drawable/btn_selected"
+=======
+        android:background="@drawable/btn_seleted"
+>>>>>>> 2_join
         android:outlineProvider="none"
         android:text="로그인"
         android:textColor="@color/gray_000"

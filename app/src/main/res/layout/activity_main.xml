@@ -15,7 +15,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2_join
         <ImageView
             android:id="@+id/iv_logo"
             android:layout_width="44dp"
