@@ -65,6 +65,7 @@
         app:passwordToggleEnabled="true">
 
         <EditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/text_radius"
@@ -138,5 +139,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_member"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
