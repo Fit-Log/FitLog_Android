@@ -3,5 +3,9 @@
     <style name="Base.Theme.FitLog_Android" parent="Theme.Material3.DayNight.NoActionBar">
     </style>
 
+    <style name="TextStyleSemiBold15">
+
+    </style>
+
     <style name="Theme.FitLog_Android" parent="Base.Theme.FitLog_Android" />
 </resources>
